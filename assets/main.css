@@ -138,9 +138,13 @@ table td { border: 1px solid #e8e8e8; }
 
 .home blockquote p { font-size: 20px; line-height: 28px; font-family: "ElsevierDisplayLight"; font-style: italic; letter-spacing: 0px; color: #fff; }
 
-@media screen and (min-width: 1160px) { .logos { position: absolute; top: 85px; z-index: -1; right: 20px; width: 200px; } }
+@media screen and (min-width: 1915px) { .logos { position: absolute; top: 85px; z-index: -1; left: 1696px; width: 200px; } }
 
-@media screen and (max-width: 1159px) { .logos { display: none; } }
+@media screen and (min-width: 1160px) and (max-width: 1915px) { .logos { position: absolute; top: 85px; z-index: -1; right: 20px; width: 200px; } }
+
+@media screen and (min-width: 400px) and (max-width: 1159px) { .logos { padding: 10px 200px; position: static; width: 150px; } }
+
+@media screen and (max-width: 400px) { .logos { padding: 10px 20px; position: static; width: 150px; } }
 
 /** Page content */
 .page-content { padding: 30px 0; flex: 1; }
