@@ -1,11 +1,95 @@
-@inproceedings{daza2020message,
-	title={Message Passing Query Embedding},
-	url = {https://arxiv.org/abs/2002.02406},
-	booktitle = {{ICML Workshop - Graph Representation Learning and Beyond}},
-	author={Daza, Daniel and Cochez, Michael},
-	year = {2020},
-	arxiv = {2002.02406}
+@article{alivanistos2022prompting,
+  author    = {Dimitrios Alivanistos and
+               Selene Baez Santamar{\'{\i}}a and
+               Michael Cochez and
+               Jan{-}Christoph Kalo and
+               Emile van Krieken and
+               Thiviyan Thanapalasingam},
+  title     = {Prompting as Probing: Using Language Models for Knowledge Base Construction},
+  journal   = {CoRR},
+  volume    = {abs/2208.11057},
+  year      = {2022},
+  url       = {https://doi.org/10.48550/arXiv.2208.11057},
+  doi       = {10.48550/arXiv.2208.11057},
+  eprinttype = {arXiv},
+  eprint    = {2208.11057},
+  timestamp = {Mon, 29 Aug 2022 15:51:41 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2208-11057.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+
+@inproceedings{colombo2022potential,
+  author    = {Simone Colombo and
+               Dimitrios Alivanistos and
+               Michael Cochez},
+  editor    = {Andreas Martin and
+               Knut Hinkelmann and
+               Hans{-}Georg Fill and
+               Aurona Gerber and
+               Doug Lenat and
+               Reinhard Stolle and
+               Frank van Harmelen},
+  title     = {Potential Energy to Improve Link Prediction With Relational Graph
+               Neural Networks},
+  booktitle = {Proceedings of the {AAAI} 2022 Spring Symposium on Machine Learning
+               and Knowledge Engineering for Hybrid Intelligence {(AAAI-MAKE} 2022),
+               Stanford University, Palo Alto, California, USA, March 21-23, 2022},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {3121},
+  publisher = {CEUR-WS.org},
+  year      = {2022},
+  url       = {http://ceur-ws.org/Vol-3121/short2.pdf},
+  timestamp = {Thu, 21 Jul 2022 12:07:44 +0200},
+  biburl    = {https://dblp.org/rec/conf/aaaiss/ColomboAC22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{alivanistos2022query,
+  author    = {Dimitrios Alivanistos and
+               Max Berrendorf and
+               Michael Cochez and
+               Mikhail Galkin},
+  title     = {Query Embedding on Hyper-Relational Knowledge Graphs},
+  booktitle = {The Tenth International Conference on Learning Representations, {ICLR}
+               2022, Virtual Event, April 25-29, 2022},
+  publisher = {OpenReview.net},
+  year      = {2022},
+  url       = {https://openreview.net/forum?id=4rLw09TgRw9},
+  timestamp = {Sat, 20 Aug 2022 01:15:42 +0200},
+  biburl    = {https://dblp.org/rec/conf/iclr/AlivanistosBC022.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{daza2022slotgan,
+    title = "{S}lot{GAN}: Detecting Mentions in Text via Adversarial Distant Learning",
+    author = "Daza, Daniel  and
+      Cochez, Michael  and
+      Groth, Paul",
+    booktitle = "Proceedings of the Sixth Workshop on Structured Prediction for NLP",
+    month = may,
+    year = "2022",
+    address = "Dublin, Ireland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.spnlp-1.4",
+    doi = "10.18653/v1/2022.spnlp-1.4",
+    pages = "32--39",
+    abstract = "We present SlotGAN, a framework for training a mention detection model that only requires unlabeled text and a gazetteer. It consists of a generator trained to extract spans from an input sentence, and a discriminator trained to determine whether a span comes from the generator, or from the gazetteer.We evaluate the method on English newswire data and compare it against supervised, weakly-supervised, and unsupervised methods. We find that the performance of the method is lower than these baselines, because it tends to generate more and longer spans, and in some cases it relies only on capitalization. In other cases, it generates spans that are valid but differ from the benchmark. When evaluated with metrics based on overlap, we find that SlotGAN performs within 95{\%} of the precision of a supervised method, and 84{\%} of its recall. Our results suggest that the model can generate spans that overlap well, but an additional filtering mechanism is required.",
+}
+
+@article{pernisch2022visualising,
+title = {Visualising the effects of ontology changes and studying their understanding with ChImp},
+journal = {Journal of Web Semantics},
+volume = {74},
+pages = {100715},
+year = {2022},
+issn = {1570-8268},
+doi = {https://doi.org/10.1016/j.websem.2022.100715},
+url = {https://www.sciencedirect.com/science/article/pii/S1570826822000117},
+author = {Romana Pernisch and Daniele Dell’Aglio and Mirko Serbak and Rafael S. Gonçalves and Abraham Bernstein},
+keywords = {Ontology editing, Materialisation, User study, Ontology evolution impact},
+abstract = {Due to the Semantic Web’s decentralised nature, ontology engineers rarely know all applications that leverage their ontology. Consequently, they are unaware of the full extent of possible consequences that changes might cause to the ontology. Our goal is to lessen the gap between ontology engineers and users by investigating ontology engineers’ understanding of ontology changes’ impact at editing time. Hence, this paper introduces the Protégé plugin ChImp which we use to reach our goal. We elicited requirements for ChImp through a questionnaire with ontology engineers. We then developed ChImp according to these requirements and it displays all changes of a given session and provides selected information on said changes and their effects. For each change, it computes a number of metrics on both the ontology and its materialisation. It displays those metrics on both the originally loaded ontology at the beginning of the editing session and the current state to help ontology engineers understand the impact of their changes. We investigated the informativeness of materialisation impact measures, the meaning of severe impact, and also the usefulness of ChImp in an online user study with 36 ontology engineers. We asked the participants to solve two ontology engineering tasks – with and without ChImp (assigned in random order) – and answer in-depth questions about the applied changes as well as the materialisation impact measures. We found that ChImp increased the participants’ understanding of change effects and that they felt better informed. Answers also suggest that the proposed measures were useful and informative. We also learned that the participants consider different outcomes of changes severe, but most would define severity based on the amount of changes to the materialisation compared to its size. The participants also acknowledged the importance of quantifying the impact of changes and that the study will affect their approach of editing ontologies.}
+}
+
 
 @inproceedings{arakelyan2021complex,
 title={Complex Query Answering with Neural Link Predictors},
@@ -47,18 +131,6 @@ note={accepted -- to appear}
 }
 
 
-@article{pernisch2022visualising,
-title = {Visualising the effects of ontology changes and studying their understanding with ChImp},
-journal = {Journal of Web Semantics},
-volume = {74},
-pages = {100715},
-year = {2022},
-issn = {1570-8268},
-doi = {https://doi.org/10.1016/j.websem.2022.100715},
-url = {https://www.sciencedirect.com/science/article/pii/S1570826822000117},
-author = {Romana Pernisch and Daniele Dell’Aglio and Mirko Serbak and Rafael S. Gonçalves and Abraham Bernstein},
-keywords = {Ontology editing, Materialisation, User study, Ontology evolution impact},
-}
 
 @article{pernisch2021hierarchy,
 title = {Beware of the hierarchy — An analysis of ontology evolution and the materialisation impact for biomedical ontologies},
@@ -71,6 +143,7 @@ doi = {https://doi.org/10.1016/j.websem.2021.100658},
 url = {https://www.sciencedirect.com/science/article/pii/S1570826821000330},
 author = {Romana Pernisch and Daniele Dell’Aglio and Abraham Bernstein},
 keywords = {Ontology evolution, Materialisation, Evolution impact, Ontology change},
+abstract = {Ontologies are becoming a key component of numerous applications and research fields. But knowledge captured within ontologies is not static. Some ontology updates potentially have a wide ranging impact; others only affect very localised parts of the ontology and their applications. Investigating the impact of the evolution gives us insight into the editing behaviour but also signals ontology engineers and users how the ontology evolution is affecting other applications. However, such research is in its infancy. Hence, we need to investigate the evolution itself and its impact on the simplest of applications: the materialisation. In this work, we define impact measures that capture the effect of changes on the materialisation. In the future, the impact measures introduced in this work can be used to investigate how aware the ontology editors are about consequences of changes. By introducing five different measures, which focus either on the change in the materialisation with respect to the size or on the number of changes applied, we are able to quantify the consequences of ontology changes. To see these measures in action, we investigate the evolution and its impact on materialisation for nine open biomedical ontologies, most of which adhere to the EL++ description logic. Our results show that these ontologies evolve at varying paces but no statistically significant difference between the ontologies with respect to their evolution could be identified. We identify three types of ontologies based on the types of complex changes which are applied to them throughout their evolution. The impact on the materialisation is the same for the investigated ontologies, bringing us to the conclusion that the effect of changes on the materialisation can be generalised to other similar ontologies. Further, we found that the materialised concept inclusion axioms experience most of the impact induced by changes to the class inheritance of the ontology and other changes only marginally touch the materialisation.}
 }
 
 @inproceedings{merono2021multidomain,
@@ -108,5 +181,15 @@ numpages = {8},
 keywords = {embedding similarity, ontology evolution, knowledge graph embeddings},
 location = {Virtual Event, USA},
 series = {K-CAP '21}
+}
+
+
+@inproceedings{daza2020message,
+	title={Message Passing Query Embedding},
+	url = {https://arxiv.org/abs/2002.02406},
+	booktitle = {{ICML Workshop - Graph Representation Learning and Beyond}},
+	author={Daza, Daniel and Cochez, Michael},
+	year = {2020},
+	arxiv = {2002.02406}
 }
 
