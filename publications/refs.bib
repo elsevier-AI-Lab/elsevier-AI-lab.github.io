@@ -37,11 +37,76 @@ url={https://openreview.net/forum?id=Mos9F9kDwkz}
 }
 
 
-@inproceedings{
-title={nductive Entity Representations from Text via Link Prediction},
+@inproceedings{daza2021inductive
+title={Inductive Entity Representations from Text via Link Prediction},
 author={Daniel Daza and Michael Cochez and Paul Groth},
 booktitle={The Web Conference, 2021},
 year={2021},
 url={https://arxiv.org/abs/2010.03496}
 note={accepted -- to appear}
 }
+
+
+@article{pernisch2022visualising,
+title = {Visualising the effects of ontology changes and studying their understanding with ChImp},
+journal = {Journal of Web Semantics},
+volume = {74},
+pages = {100715},
+year = {2022},
+issn = {1570-8268},
+doi = {https://doi.org/10.1016/j.websem.2022.100715},
+url = {https://www.sciencedirect.com/science/article/pii/S1570826822000117},
+author = {Romana Pernisch and Daniele Dell’Aglio and Mirko Serbak and Rafael S. Gonçalves and Abraham Bernstein},
+keywords = {Ontology editing, Materialisation, User study, Ontology evolution impact},
+}
+
+@article{pernisch2021hierarchy,
+title = {Beware of the hierarchy — An analysis of ontology evolution and the materialisation impact for biomedical ontologies},
+journal = {Journal of Web Semantics},
+volume = {70},
+pages = {100658},
+year = {2021},
+issn = {1570-8268},
+doi = {https://doi.org/10.1016/j.websem.2021.100658},
+url = {https://www.sciencedirect.com/science/article/pii/S1570826821000330},
+author = {Romana Pernisch and Daniele Dell’Aglio and Abraham Bernstein},
+keywords = {Ontology evolution, Materialisation, Evolution impact, Ontology change},
+}
+
+@inproceedings{merono2021multidomain,
+author = {Mero\~{n}o-Pe\~{n}uela, Albert and Pernisch, Romana and Gu\'{e}ret, Christophe and Schlobach, Stefan},
+title = {Multi-Domain and Explainable Prediction of Changes in Web Vocabularies},
+year = {2021},
+isbn = {9781450384575},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi-org.vu-nl.idm.oclc.org/10.1145/3460210.3493583},
+doi = {10.1145/3460210.3493583},
+abstract = {Web vocabularies (WV) have become a fundamental tool for structuring Web data: over 10 million sites use structured data formats and ontologies to markup content. Maintaining these vocabularies and keeping up with their changes are manual tasks with very limited automated support, impacting both publishers and users. Existing work shows that machine learning can be used to reliably predict vocabulary changes, but on specific domains (e.g. biomedicine) and with limited explanations on the impact of changes (e.g. their type, frequency, etc.). In this paper, we describe a framework that uses various supervised learning models to learn and predict changes in versioned vocabularies, independent of their domain. Using well-established results in ontology evolution we extract domain-agnostic and human-interpretable features and explain their influence on change predictability. Applying our method on 139 WV from 9 different domains, we find that ontology structural and instance data, the number of versions, and the release frequency highly correlate with predictability of change. These results can pave the way towards integrating predictive models into knowledge engineering practices and methods.},
+booktitle = {Proceedings of the 11th on Knowledge Capture Conference},
+pages = {193–200},
+numpages = {8},
+keywords = {change modelling, vocabulary change, ontology evolution},
+location = {Virtual Event, USA},
+series = {K-CAP '21}
+}
+
+
+@inproceedings{pernisch2021eri,
+author = {Pernisch, Romana and Dell'Aglio, Daniele and Bernstein, Abraham},
+title = {Toward Measuring the Resemblance of Embedding Models for Evolving Ontologies},
+year = {2021},
+isbn = {9781450384575},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi-org.vu-nl.idm.oclc.org/10.1145/3460210.3493540},
+doi = {10.1145/3460210.3493540},
+abstract = {Updates on ontologies affect the operations built on top of them. But not all changes are equal: some updates drastically change the result of operations; others lead to minor variations, if any. Hence, estimating the impact of a change ex-ante is highly important, as it might make ontology engineers aware of the consequences of their action during editing. However, in order to estimate the impact of changes, we need to understand how to measure them. To address this gap for embeddings, we propose a new measure called Embedding Resemblance Indicator (ERI), which takes into account both the stochasticity of learning embeddings as well as the shortcomings of established comparison methods. We base ERI on (i) a similarity score, (ii) a robustness factor $hatμ $ (based on the embedding method, similarity measure, and dataset), and (iii) the number of added or deleted entities to the embedding computed with the Jaccard index.To evaluate ERI, we investigate its usage in the context of two biomedical ontologies and three embedding methods---GraRep, LINE, and DeepWalk---as well as the two standard benchmark datasets---FB15k-237 and Wordnet-18-RR---with TransE and RESCAL embeddings. To study different aspects of ERI, we introduce synthetic changes in the knowledge graphs, generating two test-cases with five versions each and compare their impact with the expected behaviour. Our studies suggests that ERI behaves as expected and captures the similarity of embeddings based on the severity of changes. ERI is crucial for enabling further studies into impact of changes on embeddings.},
+booktitle = {Proceedings of the 11th on Knowledge Capture Conference},
+pages = {177–184},
+numpages = {8},
+keywords = {embedding similarity, ontology evolution, knowledge graph embeddings},
+location = {Virtual Event, USA},
+series = {K-CAP '21}
+}
+
