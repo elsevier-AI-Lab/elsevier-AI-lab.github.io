@@ -124,7 +124,7 @@ table td { border: 1px solid #e8e8e8; }
 .person { clip-path: circle(50%); width: 100px; float: left; margin-right: 50px; clear: left; }
 
 /** Home */
-@media screen and (min-width: 1010px) { .body-home { background-image: url("/img/background.png"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; color: #fff; } }
+@media screen and (min-width: 1010px) { .body-home { background-image: url("/img/background.png"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; color: #fff; } .wrapper { margin-left: 200px; } }
 
 @media screen and (max-width: 1009px) { .body-home { color: #fff; background-position-x: -200px; background-image: url("/img/background.png"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; } }
 
@@ -142,9 +142,9 @@ table td { border: 1px solid #e8e8e8; }
 
 @media screen and (min-width: 1160px) and (max-width: 1915px) { .logos { position: absolute; top: 85px; z-index: -1; right: 20px; width: 200px; } }
 
-@media screen and (min-width: 400px) and (max-width: 1159px) { .logos { padding: 10px 200px; position: static; width: 150px; } }
+@media screen and (min-width: 400px) and (max-width: 1159px) { .logos { padding: 10px 200px; position: static; width: 150px; margin-bottom: 100px; } }
 
-@media screen and (max-width: 400px) { .logos { padding: 10px 20px; position: static; width: 150px; } }
+@media screen and (max-width: 400px) { .logos { padding: 10px 20px; position: static; width: 150px; margin-bottom: 100px; } }
 
 /** Page content */
 .page-content { padding: 30px 0; flex: 1; }
