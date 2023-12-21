@@ -124,9 +124,9 @@ table td { border: 1px solid #e8e8e8; }
 .person { clip-path: circle(50%); width: 100px; float: left; margin-right: 50px; clear: left; }
 
 /** Home */
-@media screen and (min-width: 1010px) { .body-home { background-image: url("/img/background.png"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; color: #fff; } .wrapper { margin-left: 200px; } }
+@media screen and (min-width: 1010px) { .body-home { background-image: url("/img/background.jpg"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; color: #fff; } .wrapper { margin-left: 200px; } }
 
-@media screen and (max-width: 1009px) { .body-home { color: #fff; background-position-x: -200px; background-image: url("/img/background.png"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; } }
+@media screen and (max-width: 1009px) { .body-home { color: #fff; background-position-x: -200px; background-image: url("/img/background.jpg"); background-clip: border-box; background-repeat: no-repeat; background-attachment: fixed; } }
 
 .home { margin-top: 85px; }
 
